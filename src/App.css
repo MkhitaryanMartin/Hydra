@@ -1,0 +1,167 @@
+p,h2,h3{
+      color: var(--white);
+      margin: 0;
+}
+:root{
+      --block-width: 50%;
+       /*-------Color---------*/
+      --white--smoke: #F5F5F5;
+      --white: #FFFFFF;
+      --red: #FF0000;
+      --violaBlack: rgba(48, 44, 66, 1);
+      --OIL-RUSH:#343045;
+      --green:#008000;
+      --dark_gray:#A3A3A3;
+      /*-------FONT--------*/
+      /*-------FONT FAMALY--------*/
+      --font-family: 'Montserrat';
+      --font-style: normal;
+      /*-------FONT WEIGHT--------*/
+      --font--weight700: 700;
+      --font--weight400: 400;
+      --font--weight300: 300;
+      /*-------FONT SIZE--------*/
+      --font-size64: 64px;
+      --font-size46: 46px;
+      --font-size40: 40px;
+      --font-size36: 36px;
+      --font-size24: 24px;
+      --font-size16: 16px;
+      --font-size14: 14px;
+      --font-size12: 12px;
+      /*-------FONT HEIGHT--------*/
+      --line-height78: 78px;
+      --line-height56: 56px;
+      --line-height49: 49px;
+      --line-height44: 44px;
+      --line-height29: 29px;
+      --line-height20: 20px;
+      --line-height17: 17px;
+      --line-height15: 15px;
+}
+a:hover{
+      box-shadow: white 0px 5px 15px;
+}
+a{
+      padding: 1px ;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+}
+.main{
+      background-color: var(--violaBlack);
+      padding: 50px 84px 0 84px;
+      min-width: 380px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      overflow: hidden;
+}
+.nextPrev{
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline-color: var(--white--smoke);
+      outline-width: 100px;
+}
+.nextPrev svg{
+      margin-left: 10px;
+}
+
+.globalDiv{
+      margin-top: 200px;
+}
+
+/* ------------------- text style ----------------------- */
+.small{
+      font-weight: var(--font-weight400);
+      font-size: var(--font-size12);
+      line-height: var(--line-height15); 
+  }
+.sami_regular{
+      font-weight: var(--font--weight400);
+      font-size: var(--font-size14);
+      line-height: var(--line-height17);
+}
+.regular{
+      font-weight: var(--font-weight400);
+      font-size: var(--font-size16);
+      line-height: var(--line-height20);
+}
+  .normal{
+      font-weight: var(--font-weight700);
+      font-size: var(--font-size12);
+      line-height: var(--line-height15);
+}
+.semi_medium{
+      font-weight: var(--font--weight700);
+      font-size: var(--font-size24);
+      line-height: var(--line-height29);
+}
+.medium{
+      font-weight: var(--font-weight300);
+      font-size: var(--font-size36);
+      line-height: var(--line-height44);
+}
+.semi_bold{
+      font-weight: var(--font-weight700);
+      font-size: var(--font-size36);
+      line-height: var(--line-height44);
+}
+.bold{
+      font-weight: var(--font-weight700);
+      font-size: var(--font-size40);
+      line-height: var(--line-height49);
+}
+.max-bold{
+      font-weight: var(--font-weight700);
+      font-size: var(--font-size46);
+      line-height: var(--line-height56);
+}
+.ultra-bold{
+      font-weight: var(--font-weight700);
+      font-size: var(--font-size64);
+      line-height: var(--line-height78);
+}
+/* ------------------- text style ----------------------- */
+@media screen and (max-width: 1440px) {
+     .main{
+            padding: 50px 2vw 0 2vw;
+     }
+     a{
+      font-weight: var(--font-weight400);
+      font-size: var(--font-size12);
+      line-height: var(--line-height15);
+}
+}
+@media screen and (max-width: 1100px) {
+      :root{
+            --font-size46: 36px;
+            --line-height56: 44px;
+            --font-size40: 24px;
+            --line-height49: 29px;
+            --font-size36: 26px;
+            --line-height44: 32px;
+            --font-size24: 14px;
+            --line-height29: 17px;
+            --font-size16: 12px;
+            --line-height20: 15px;
+            --font-size12: 14px;
+            --line-height15: 17px;
+      }
+      .main{
+            padding: 10px 1vw 0 1vw;
+     }
+}
+@media screen and (max-width: 700px) {
+      :root{
+            --block-width: 100%
+      }
+}
+ 

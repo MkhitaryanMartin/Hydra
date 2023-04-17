@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 112px;
+}
+
+.formContainer{
+    width: 1275px;
+    background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    padding: 90px 0 101px 0;
+}
+.formContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 65px;
+}
+form hr {
+    width: 414px
+}
+form textarea{
+    width: 1098px;
+    height: 210px;
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    background-color: inherit;
+    padding: 27px 0 0 42px;
+    margin: 39px 0 51px 0;
+}
+.inputDiv{
+    margin-top: 39px;
+}
+
+.input{
+    margin: 0 0 0 10px;
+}
+form .subject {
+    width: 1098px;
+    height: 72px;
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    background: inherit;
+    padding-left: 42px;
+}
+form button{
+    align-self: center;
+}
+.modalP{
+    color:var(--black) ;
+    margin: 20px 0 20px 0;
+}
+.modalH2{
+    color: green
+}
+
+@media screen and (max-width: 1200px) {
+    form .subject{
+        width: 524px;
+        height: 53px;
+    }
+    .containerDefault{
+        height: 72px;
+    }
+    form textarea{
+        width: 524px;
+        align-self: center;
+    }
+    form{
+        flex-direction: column;
+         padding: 0 10px 0 10px;
+    }
+    form .input{
+       margin: 0;
+    }
+    .formContainer{
+        width: auto;
+    }
+}
+@media screen and (max-width: 650px) {
+    form .subject{
+        width: 280px;
+        height: 53px;
+    }
+    .containerDefault{
+        height: 72px;
+    }
+    form textarea{
+        width: 280px;
+        align-self: center;
+    }
+    form hr {
+        width: 360px
+    }
+    form{
+        margin-top: 10px;
+    }
+    .formContainer{
+        padding: 30px 10px 30px 10px
+    }
+    
+}

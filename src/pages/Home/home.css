@@ -1,0 +1,172 @@
+.homeDiv{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.homeContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+    padding-top: 57px;
+    align-items: center;
+}
+.homeTextDiv{
+    width: var(--block-width);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+.homeH2{
+    margin: 0;
+    background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.homeH3{
+    margin: 0;
+    background: linear-gradient(91.57deg, #FFFF -1.02%, #8176AF 36.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.homeDiv p{
+    color: var(--white);
+}
+.homeButtonDiv{
+    display: flex;
+}
+.homeButtonDiv button {
+    margin-right: 40px;
+}
+.homeContainer .homeImgDiv{
+    position: relative;
+    width: 524px;
+    height: 455px;
+    background: rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px 100px 100px 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeContainer .homeImgDiv img{
+    position: absolute;
+    border-radius: 100px 100px 100px 240px;
+    z-index: 10;
+}
+.communication{
+    position: relative;
+    width: 1272px;
+    height: 167px;
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    border-radius: 90px;
+    align-self: center;
+    margin: 88px 0 4px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.communication .hr{
+    width: 0px;
+    height: 116.5px;
+    border: 1px solid rgba(192, 183, 232, 0.33);
+}
+.homeBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeSectionTextDiv{
+    margin-left: 15px;
+}
+
+.communication .next{
+    top: 40%;
+}
+.vector2{
+    position: absolute;
+    z-index: 0;
+}
+.vector3{
+    position: absolute;
+    z-index: 0;
+    top: 20%;
+}
+.blockMargin{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .communication{
+        width: 950px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .homeContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 16px;
+    }
+    .homeButtonDiv{
+        justify-content: center;
+    }
+    .homeTextDiv{
+        height: 200px;
+    }
+    .homeText,.hr{
+        display: none;
+    }
+    .communication{
+        margin: 55px 0 4px 0;
+        height: 109px;
+        width: 347px;
+        justify-content: flex-start;
+    }
+    .homeBlock{
+        flex: 0 0 100%;
+    }
+    .text{
+        width: 174px;
+    }
+    .blockMargin{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 580px) {
+    .homeContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 41px;
+        padding-top: 57px;
+    }
+    .homeContainer .homeImgDiv{
+        width: 358px;
+        height: 317px;
+        margin-right: 30px;
+    }
+    .homeContainer .homeImgDiv img{
+        width: 338px;
+        height: 297px;  
+    }
+    .homeButtonDiv button{
+        margin: 0;
+    }
+    .homeButtonDiv svg,.hr,.titleHidden, .homeText{
+        display: none;
+    }
+    .communication{
+        margin: 55px 0 38px 0;
+    }
+    .homeTextDiv{
+        height: 315px;
+    }
+}

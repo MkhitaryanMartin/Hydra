@@ -1,0 +1,30 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.container p{
+    width: 30%;
+    text-align: end;
+}
+.arrow_block{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.container .arrow_block h3{
+    margin: 0;
+}
+.container .arrow_block div{
+    margin-left: 30px;
+}
+@media screen and (max-width: 1100px) {
+    .arrow_block div, .container p{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+    }
+}

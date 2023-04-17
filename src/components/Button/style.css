@@ -1,0 +1,33 @@
+.btn--default {
+    width: 154px;
+    height: 48px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    color: var(--OIL-RUSH)
+}
+.btn--inherit{
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    background: inherit;
+    color: var(--white);
+}
+.btn--purple{
+    width: 214px;
+    height: 48px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    color: var(--OIL-RUSH);
+}
+.btn--purple:hover{
+    box-shadow: var(--green) 0px 5px 15px;
+}
+
+.disabled{
+    opacity: 0.5;
+}
+.disabled:hover{
+    box-shadow: var(--red) 0px 5px 15px;
+}
+button{
+    cursor: pointer;
+}

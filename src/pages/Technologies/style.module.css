@@ -1,0 +1,104 @@
+h4{
+    color: var(--white);
+}
+.container{
+    margin-top: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleDiv{
+    width: 1278px;
+    height: 383px;
+    background-image: url("../../assets/img/technoImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    border-radius: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 54px;
+    margin-bottom: 119px;
+}
+.imgDiv img{
+    margin-right: 91px;
+}
+.typeDiv{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.typeDiv .vector{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+.transformDiv{
+    position: relative;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+}
+.typeDiv .nextt{
+    position: absolute;
+    top: 75%;
+}
+.typeDiv .prevv{
+    position: absolute;
+    top: 75%;
+    
+}
+
+@media screen and (max-width: 1350px) {
+   .titleDiv{
+        width: 1000px;    
+   }
+   .imgDiv{
+    width: 1100px;
+   }
+   .imgDiv img{
+    margin-right: 10px;
+   }
+   .vector{
+    display: none;
+}
+}
+
+@media screen and (max-width: 1100px) {
+    .titleDiv{
+        width: 550px;
+        height: 198px;   
+   }
+   .imgDiv{
+        width: 282px;
+        overflow: hidden;
+        justify-content: flex-start;
+   }
+   .imgDiv img{
+      flex: 0 0 100%;
+      margin: 0;
+    }
+    .typeDiv{
+        width: 300px;
+        height: 299px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 580px) {
+    .titleDiv{
+        width: 340px;
+        height: 140px;
+   }
+}

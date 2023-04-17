@@ -1,0 +1,36 @@
+.inputDefault{
+    width: 524px;
+    height: 72px;
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    background: inherit;
+    padding-left: 42px;
+    color: var(--white);
+}
+
+.containerDefault{
+    display: flex;
+    align-items: flex-start;
+    height: 105px;
+}
+.errorText{
+    color: var(--red);
+    align-self: flex-start;
+    margin: 5px 0 0 25px;
+  }
+  
+  .errorText::before {
+    display: inline;
+    content: "⚠ ";
+  }
+
+
+@media screen and (max-width: 650px) {
+    .inputDefault{
+        width: 280px;
+        height: 53px;
+    }
+    .containerDefault{
+        height: 86px;
+    }
+}
